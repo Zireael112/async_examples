@@ -1,0 +1,26 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+     "es6": true,
+     "browser": true,
+     "jest": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+      
+    ],
+    "array-callback-return": ["off"],
+    "consistent-return": ["off"],
+    "linebreak-style": ["error", "windows"],
+    "no-unused-vars": "off",
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "import/extensions": 0,
+    "no-unused-expressions": 0
+
+  }
+  
+}
