@@ -3,9 +3,10 @@ import json from './parser';
 import GameSaving from './createChar';
 
 export default class GameSavingLoader {
-  static load() {
-    return read()
-      .then((data) => json(data))
-      .then((data) => new GameSaving(JSON.parse(data)));
+  static async load() {
+    const readed = await read();
+    const parsed = await json(readed);
+    const deparsed = new GameSaving(JSON.parse(parsed));
+    return deparsed;
   }
 }
